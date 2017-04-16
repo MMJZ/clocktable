@@ -1,0 +1,148 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Clocktable</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="Michael Agius">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.5.1/svg.min.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <div>
+      <div>
+        <h2>MMJZ</h2>
+        <h1>Clocktable</h1>
+        <a href="https://github.com/MMJZ/clocktable">repo</a>
+        <div class="checkbox"><span onclick="darkTheme()">dark theme</span></div>
+      </div>
+    </div>
+    <div>
+      <textarea id="jsontable">
+      
+        {
+    "rooms": [
+        "Hall","Hall","OB","NB","Catte Street"
+        ],
+    "sessions": [
+      {
+        "room": 0,
+        "start": 9,
+        "end": 1,
+        "name": "Casino"
+      },
+      {
+        "room": 1,
+        "start": 9,
+        "end": 10.5,
+        "name": "Remy and co"
+      },
+      {
+        "room": 1,
+        "start": 10.5,
+        "end": 11.5,
+        "name": "Jazz"
+      },
+      {
+        "room": 1,
+        "start": 11.5,
+        "end": 1,
+        "name": "Bruce Bracebridge"
+      },
+      
+      {
+        "room": 2,
+        "start": 8.5,
+        "end": 9.5,
+        "name": "Redford-Jones"
+      },
+      {
+        "room": 2,
+        "start": 9.5,
+        "end": 10.5,
+        "name": "OOTB"
+      },
+      {
+        "room": 2,
+        "start": 10.5,
+        "end": 11.5,
+        "name": "Hoosiers"
+      },
+      {
+        "room": 2,
+        "start": 11.5,
+        "end": 2,
+        "name": "DFOSE"
+      },
+      {
+        "room": 2,
+        "start": 2,
+        "end": 4,
+        "name": "Silent Disco"
+      },
+      
+      
+      {
+        "room": 3,
+        "start": 9,
+        "end": 10,
+        "name": "Little Sparta"
+      },
+      {
+        "room": 3,
+        "start": 10,
+        "end": 11,
+        "name": "Emily the Snake"
+      },
+      {
+        "room": 3,
+        "start": 11,
+        "end": 0.5,
+        "name": "Garfunkel"
+      },
+      {
+        "room": 3,
+        "start": 0.5,
+        "end": 2,
+        "name": "Burning Down the House"
+      },
+      {
+        "room": 3,
+        "start": 2,
+        "end": 4,
+        "name": "iPod"
+      },
+      {
+        "room": 4,
+        "start": 8,
+        "end": 9,
+        "name": "Rebecca McNought"
+      },
+      {
+        "room": 4,
+        "start": 9.9,
+        "end": 10.6,
+        "name": "Fire Performance"
+      },
+      {
+        "room": 4,
+        "start": 10.9,
+        "end": 11.65,
+        "name": "Ambient Fire Show"
+      }
+    ]
+  }
+      
+      </textarea>
+      <button onclick="run()">Run</button>
+    </div>
+  </header>
+  <div id="clock"></div>
+  <div id="clockimage"></div>
+  <script src="draw.js"></script>
+</body>
+</html>
